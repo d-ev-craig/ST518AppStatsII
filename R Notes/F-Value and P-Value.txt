@@ -1,0 +1,11 @@
+qf(sig level, num df, denom df)
+  - num df is df associated with model or treatments typically
+  - i.e. if you have 4 treatment levels, you have 3 df and is the num df in above syntax
+  - denom df is df associated with error
+  - i.e. if you have 12 total observations among these 4 treatment levels, you have 8 df and is the denom df in above syntax
+  - i.e. qf(.95, 3, 8) = 5.16
+
+1-pf(f-val, num df, denom df)
+
+   - finds probability of a value at or more extreme under the f dist
+   - i.e. 1-pf(5.16, 3, 8)

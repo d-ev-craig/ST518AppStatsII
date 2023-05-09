@@ -1,0 +1,6 @@
+iqstudy.dat <- read.table("iqstudy.dat",header=TRUE)
+plot(iqstudy.dat[,2:3],xlim=c(0,20),ylim=c(50,100),main="Grades,IQs,Times")
+abline(59.1,1.2)
+abline(59.1-.13,1.2+.053,lty=2)
+abline(59.1-10*.13,1.2+10*.053,lty=10)
+legend(4,95,c("IQ=100","IQ=101","IQ=110"),lty=1:3)

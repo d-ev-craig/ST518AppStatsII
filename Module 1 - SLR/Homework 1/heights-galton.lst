@@ -1,0 +1,104 @@
+                              The SAS System                              1
+
+                            The CORR Procedure
+
+                   2      Variables:    son      parent   
+                     Freq Variable:     count             
+
+
+                               CSSCP Matrix
+ 
+                                     son            parent
+
+                son          5877.206627       1913.897629
+                parent       1913.897629       2961.357759
+
+
+                       Covariance Matrix, DF = 927
+ 
+                                     son            parent
+
+                son          6.340028724       2.064614487
+                parent       2.064614487       3.194560689
+
+
+                            Simple Statistics
+ 
+      Variable           N          Mean       Std Dev           Sum
+
+      son              928      68.08847       2.51794         63186
+      parent           928      68.30819       1.78733         63390
+
+                            Simple Statistics
+ 
+                   Variable       Minimum       Maximum
+
+                   son           61.70000      73.70000
+                   parent        64.00000      73.00000
+
+
+                Pearson Correlation Coefficients, N = 928 
+                        Prob > |r| under H0: Rho=0
+ 
+                                     son        parent
+
+                    son          1.00000       0.45876
+                                                <.0001
+
+                    parent       0.45876       1.00000
+                                  <.0001              
+                              The SAS System                              2
+
+                             The REG Procedure
+                               Model: MODEL1
+                         Dependent Variable: son 
+
+          Number of Observations Read                        156
+          Number of Observations Used                        102
+          Number of Observations with Missing Values           2
+          Sum of Frequencies Read                            930
+          Sum of Frequencies Used                            928
+
+
+                             Frequency: count 
+
+                           Analysis of Variance
+ 
+                                   Sum of          Mean
+ Source                  DF       Squares        Square   F Value   Pr > F
+
+ Model                    1    1236.93401    1236.93401    246.84   <.0001
+ Error                  926    4640.27261       5.01109                   
+ Corrected Total        927    5877.20663                                 
+
+
+           Root MSE              2.23855    R-Square     0.2105
+           Dependent Mean       68.08847    Adj R-Sq     0.2096
+           Coeff Var             3.28770                       
+
+
+                           Parameter Estimates
+ 
+                        Parameter       Standard
+   Variable     DF       Estimate          Error    t Value    Pr > |t|
+
+   Intercept     1       23.94153        2.81088       8.52      <.0001
+   parent        1        0.64629        0.04114      15.71      <.0001
+
+                            Parameter Estimates
+ 
+               Variable     DF       95% Confidence Limits
+
+               Intercept     1       18.42510       29.45796
+               parent        1        0.56556        0.72702
+        questions regarding prediction, estimation when x=68, x=72        3
+
+  Obs parent count son   yhat  stdmean  cilow   cihigh  pilow   pihigh r
+
+   1    68     1    .  67.8893 0.07457 67.7429 68.0356 63.4936 72.2849 .
+   2    72     1    .  70.4745 0.16871 70.1434 70.8056 66.0688 74.8801 .
+              computations of 95% confidence interval for rho             4
+
+  Obs    n       r       rratio      z        expon      rlow     rhigh
+
+   1    928   0.45880   2.69551   1.95996   0.064443   0.40645   0.50815

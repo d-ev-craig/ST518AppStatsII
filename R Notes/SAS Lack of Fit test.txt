@@ -1,0 +1,5 @@
+PROC GLM DATA=widths;
+CLASS dayc;
+MODEL bw=day dayc; *order important!
+RUN;
+

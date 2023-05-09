@@ -1,0 +1,34 @@
+options ls=105 nocenter ps=1000 nodate;
+data one;
+   length model $20;
+   infile "mtcars.csv" firstobs=2 dsd;
+  input model $ mpg  cyl  disp  hp  drat  wt  qsec  vs  am  gear  carb; 
+  disp2=disp**2;  gear2=gear**2; hp2=hp**2;
+run;
+symbol value=dot;
+*goptions dev=pdf;
+ods graphics on;
+proc reg data=one;
+   model  mpg=cyl disp hp drat wt qsec vs am gear carb /selection=cp aic mse;
+   model  mpg=wt qsec am disp disp2;
+   output out=residz r=r p=p;
+run;
+/*
+proc gplot data=residz;
+   title "residuals vs fitted(i)";
+   title2 "observed vs fitted(iii)";
+   plot r*p;
+   plot mpg*p;
+run;*/
+proc sort data=residz;
+   by r;
+run;
+data residz;
+   set residz;
+   qnorm=quantile("norm",_n_/33);
+run;
+proc print;run;
+proc gplot;
+   title "qqnormal plot(ii)";
+   plot qnorm*r;
+run;

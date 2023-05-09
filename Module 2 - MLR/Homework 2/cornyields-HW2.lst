@@ -1,0 +1,294 @@
+The SAS System                                                                                                    1
+
+The REG Procedure
+Model: MODEL1
+Dependent Variable: yield 
+
+Number of Observations Read          38
+Number of Observations Used          38
+
+
+                             Analysis of Variance
+ 
+                                    Sum of           Mean
+Source                   DF        Squares         Square    F Value    Pr > F
+
+Model                     1      114.21474      114.21474       6.97    0.0122
+Error                    36      590.33578       16.39822                     
+Corrected Total          37      704.55053                                    
+
+
+Root MSE              4.04947    R-Square     0.1621
+Dependent Mean       31.91579    Adj R-Sq     0.1388
+Coeff Var            12.68799                       
+
+
+                         Parameter Estimates
+ 
+                      Parameter       Standard
+Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+Intercept      1       23.55210        3.23646       7.28      <.0001
+rain           1        0.77555        0.29386       2.64      0.0122
+The SAS System                                                                                                    2
+
+The REG Procedure
+Model: MODEL2
+Dependent Variable: yield 
+
+Number of Observations Read          38
+Number of Observations Used          38
+
+
+                             Analysis of Variance
+ 
+                                    Sum of           Mean
+Source                   DF        Squares         Square    F Value    Pr > F
+
+Model                     2      209.02175      104.51087       7.38    0.0021
+Error                    35      495.52878       14.15797                     
+Corrected Total          37      704.55053                                    
+
+
+Root MSE              3.76271    R-Square     0.2967
+Dependent Mean       31.91579    Adj R-Sq     0.2565
+Coeff Var            11.78948                       
+
+
+                                        Parameter Estimates
+ 
+                      Parameter       Standard
+Variable      DF       Estimate          Error    t Value    Pr > |t|      Type I SS     Type II SS
+
+Intercept      1       -5.01467       11.44158      -0.44      0.6639          38707        2.71965
+rain           1        6.00428        2.03895       2.94      0.0057      114.21474      122.77508
+rain2          1       -0.22936        0.08864      -2.59      0.0140       94.80700       94.80700
+The SAS System                                                                                                    3
+
+The REG Procedure
+Model: MODEL3
+Dependent Variable: yield 
+
+Number of Observations Read          38
+Number of Observations Used          38
+
+
+                             Analysis of Variance
+ 
+                                    Sum of           Mean
+Source                   DF        Squares         Square    F Value    Pr > F
+
+Model                     2      210.20835      105.10418       7.44    0.0020
+Error                    35      494.34217       14.12406                     
+Corrected Total          37      704.55053                                    
+
+
+Root MSE              3.75820    R-Square     0.2984
+Dependent Mean       31.91579    Adj R-Sq     0.2583
+Coeff Var            11.77536                       
+
+
+                                        Parameter Estimates
+ 
+                      Parameter       Standard
+Variable      DF       Estimate          Error    t Value    Pr > |t|      Type I SS     Type II SS
+
+Intercept      1     -252.95885      106.10725      -2.38      0.0227          38707       80.27296
+rain           1        0.75661        0.27282       2.77      0.0088      114.21474      108.62838
+year           1        0.14499        0.05562       2.61      0.0133       95.99361       95.99361
+The SAS System                                                                                                    4
+
+The REG Procedure
+Model: MODEL4
+Dependent Variable: yield 
+
+Number of Observations Read          38
+Number of Observations Used          38
+
+
+                             Analysis of Variance
+ 
+                                    Sum of           Mean
+Source                   DF        Squares         Square    F Value    Pr > F
+
+Model                     5      402.26646       80.45329       8.52    <.0001
+Error                    32      302.28406        9.44638                     
+Corrected Total          37      704.55053                                    
+
+
+Root MSE              3.07350    R-Square     0.5710
+Dependent Mean       31.91579    Adj R-Sq     0.5039
+Coeff Var             9.63002                       
+
+
+                                        Parameter Estimates
+ 
+                      Parameter       Standard
+Variable      DF       Estimate          Error    t Value    Pr > |t|      Type I SS     Type II SS
+
+Intercept      1    -1592.58552     1937.73650      -0.82      0.4172          38707        6.38089
+rain           1       99.23218      355.38100       0.28      0.7819      114.21474        0.73652
+rain2          1        2.52910       16.05702       0.16      0.8758       94.80700        0.23435
+year           1        0.83510        1.01578       0.82      0.4171       84.53564        6.38467
+rain_year      1       -0.04940        0.18626      -0.27      0.7925      108.43893        0.66449
+rain2_year     1       -0.00142        0.00841      -0.17      0.8668        0.27014        0.27014
+The SAS System                                                                                                    5
+
+The REG Procedure
+Model: MODEL4
+
+    Test m4vsm3 Results for Dependent Variable yield
+ 
+                                Mean
+Source             DF         Square    F Value    Pr > F
+
+Numerator           3       64.01937       6.78    0.0011
+Denominator        32        9.44638                     
+The SAS System                                                                                                    6
+
+The REG Procedure
+Model: MODEL4
+
+    Test m4vsm5 Results for Dependent Variable yield
+ 
+                                Mean
+Source             DF         Square    F Value    Pr > F
+
+Numerator           2       68.61609       7.26    0.0025
+Denominator        32        9.44638                     
+The SAS System                                                                                                    7
+
+The REG Procedure
+Model: MODEL4
+
+    Test m4vsm2 Results for Dependent Variable yield
+ 
+                                Mean
+Source             DF         Square    F Value    Pr > F
+
+Numerator           3       64.41491       6.82    0.0011
+Denominator        32        9.44638                     
+The SAS System                                                                                                    8
+
+The REG Procedure
+Model: MODEL5
+Dependent Variable: yield 
+
+Number of Observations Read          38
+Number of Observations Used          38
+
+
+                             Analysis of Variance
+ 
+                                    Sum of           Mean
+Source                   DF        Squares         Square    F Value    Pr > F
+
+Model                     3      265.03429       88.34476       6.83    0.0010
+Error                    34      439.51623       12.92695                     
+Corrected Total          37      704.55053                                    
+
+
+Root MSE              3.59541    R-Square     0.3762
+Dependent Mean       31.91579    Adj R-Sq     0.3211
+Coeff Var            11.26529                       
+
+
+                         Parameter Estimates
+ 
+                      Parameter       Standard
+Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+Intercept      1       -4.59240       10.91765      -0.42      0.6767
+rain           1      -15.38733        9.43626      -1.63      0.1122
+rain_year      1        0.01117        0.00490       2.28      0.0290
+rain2_year     1    -0.00011868     0.00004432      -2.68      0.0113
+The SAS System                                                                                                    9
+
+The REG Procedure
+Model: MODEL6
+Dependent Variable: yield 
+
+Number of Observations Read          38
+Number of Observations Used          38
+
+
+                             Analysis of Variance
+ 
+                                    Sum of           Mean
+Source                   DF        Squares         Square    F Value    Pr > F
+
+Model                     3      340.60856      113.53619      10.61    <.0001
+Error                    34      363.94197       10.70418                     
+Corrected Total          37      704.55053                                    
+
+
+Root MSE              3.27172    R-Square     0.4834
+Dependent Mean       31.91579    Adj R-Sq     0.4379
+Coeff Var            10.25111                       
+
+
+                                        Parameter Estimates
+ 
+                      Parameter       Standard
+Variable      DF       Estimate          Error    t Value    Pr > |t|      Type I SS     Type II SS
+
+Intercept      1    -2047.01285      522.24578      -3.92      0.0004          38707      164.45401
+rain           1      168.27236       47.99527       3.51      0.0013      114.21474      131.57759
+year           1        1.08545        0.27376       3.96      0.0004       95.99361      168.27416
+rain_year      1       -0.08781        0.02516      -3.49      0.0014      130.40020      130.40020
+model6                                                                                                           10
+different slopes
+
+The GLM Procedure
+
+Number of Observations Read          38
+Number of Observations Used          38
+model6                                                                                                           11
+different slopes
+
+The GLM Procedure
+ 
+Dependent Variable: yield   
+
+                                        Sum of
+Source                      DF         Squares     Mean Square    F Value    Pr > F
+
+Model                        3     340.6085561     113.5361854      10.61    <.0001
+
+Error                       34     363.9419702      10.7041756                     
+
+Corrected Total             37     704.5505263                                     
+
+
+R-Square     Coeff Var      Root MSE    yield Mean
+
+0.483441      10.25111      3.271724      31.91579
+
+
+Source                      DF       Type I SS     Mean Square    F Value    Pr > F
+
+rain                         1     114.2147441     114.2147441      10.67    0.0025
+year                         1      95.9936102      95.9936102       8.97    0.0051
+rain*year                    1     130.4002017     130.4002017      12.18    0.0014
+
+
+Source                      DF     Type III SS     Mean Square    F Value    Pr > F
+
+rain                         1     131.5775890     131.5775890      12.29    0.0013
+year                         1     168.2741563     168.2741563      15.72    0.0004
+rain*year                    1     130.4002017     130.4002017      12.18    0.0014
+
+
+                                            Standard
+Parameter                   Estimate           Error    t Value    Pr > |t|
+
+rain slope in 1900        1.43318229      0.30657013       4.67      <.0001
+
+
+                                  Standard
+Parameter         Estimate           Error    t Value    Pr > |t|
+
+Intercept     -2047.012854     522.2457844      -3.92      0.0004
+rain            168.272359      47.9952694       3.51      0.0013
+year              1.085449       0.2737646       3.96      0.0004
+rain*year        -0.087810       0.0251583      -3.49      0.0014

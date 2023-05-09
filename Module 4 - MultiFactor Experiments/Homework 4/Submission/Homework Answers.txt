@@ -1,0 +1,36 @@
+1a. Included in ProcReg & proc gplot
+
+1b. 
+
+1c. 
+         C(p)              AIC            Variables
+3	0.1026	0.8497	61.3073	6.04593	wt qsec am
+4	0.7900	0.8579	61.5153	5.92839	hp wt qsec am
+4	0.9585	0.8568	61.7510	5.97222	wt qsec am carb
+3	1.1469	0.8431	62.6646	6.30788	cyl hp wt
+2	1.2187	0.8302	63.1980	6.59214	cyl wt
+3	1.2578	0.8425	62.8054	6.33570	cyl wt carb
+4	1.6362	0.8526	62.6820	6.14851	disp wt qsec am
+3	1.6695	0.8399	63.3228	6.43897	hp wt am
+3	1.7142	0.8396	63.3784	6.45016	cyl wt qsec
+2	1.7706	0.8268	63.8403	6.72578	hp wt
+
+
+1d. 
+
+1. wt qsec am : R^2 = .85 MSE = 6.05
+2. cyl hp wt  : R^2 = .84 MSE = 6.31
+
+
+1e.
+ y = wtx1 + qsecx2 + amx3 vs. y = wtx1 + qsecx2 + amx3 + dispx4 + disp2x5
+ H0: disp = disp2 = 0 Ha: disp = disp2 <> 0
+F = 38.98; qf(.95,2,26) = 3.37 < 38.98 thus reject H0 and state there is statistically sign. evidence to suggest disp and disp2 are not equal to 0
+
+1f. MSE = 5.097 R2 = .88
+I believe the 3 variable model denoted in 1d is still superior since it has less variables, and our R2 value is only 4% off and MSE is only 1, on average, Std. Err higher.
+I would be interested in seeing the AIC and C(p) of our model with 5 variables to see what those scores look like. I would imagine they are higher than the 3 variable model from 1d
+I would also like to see what industry standard is on variability explained gained vs a more complex model and where the cost benefit is in favor of a more complex model.
+
+
+

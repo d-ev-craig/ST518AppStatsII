@@ -1,0 +1,23 @@
+options ls=90 nocenter;
+data one;
+   input IQ study grade;
+   iqstudy=iq*study;
+   cards;
+ 105 10 75
+ 110 12 79
+ 120  6 68
+ 116 13 85
+ 122 16 91
+ 130  8 79
+ 114 20 98
+ 102 15 76
+ 113 14 .
+;
+run;
+proc print data=one noobs;
+   var iq study grade;
+run;   
+proc reg data=one outest=two;
+   model grade=iq study iqstudy/p clm cli xpx inv covb;
+   output out=three r=r p=p lclm=lcl uclm=ucl lcl=lpl ucl=upl;
+run;

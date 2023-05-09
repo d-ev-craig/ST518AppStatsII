@@ -1,0 +1,27 @@
+theta_agehat = c11*ybar11 + c12*ybar12 + c21*ybar21 + c22*ybar22 
+E(c11*ybar11. + c12*ybar12. + c21*ybar21. + c22*ybar22.)
+(c11+c12+c21+c22)*mu  + (c11 + c12)*alpha1 + (c21 + c22)*alpha2 + (c11+c21)*beta1 + (c12+c22)beta2
+
+constraints for E(thetahat) = 1*alpha1 + (-1)alpha2
+(c11+c12+c21+c22) = 0
+(c11 + c12)= 1  ---> c12=1-c11
+(c21 + c22)=-1
+(c11+c21)  = 0  ---> c21=-c11
+(c12+c22)  = 0  ---> c22 = -c12 = -(1-c11) 
+
+Var(theta_agehat) = Var(c11*ybar11 + c12*ybar12 + c21*ybar21 + c22*ybar22 )
+                  = c11^2 Var(Ybar11.) + c12^2 Var(Ybar12.) + c21^2*Var(Ybar21.) +
+                  = c11^2 sigma^2/n11  + c12^2 sigma^2/n12) + c21^2*sigma^2/n21 + c22^2*sigma^2/n22
+             propto  c11^2/n11  + c12^2 /n12 + c21^2/n21 + c22^2/n22
+                  = c11^2/n11 + (1-c11)^2/n12 + (-c11)^2/n21 + (c11-1)^2/n22
+                  = c11^2/6 + (1-c11)^2 + (-c11)^2 + (c11-1)^2/7
+minimize Var() wrt c11
+            dVar()/dc11 = 2*c11/6 - 2(1-c11) + 2c11 + 2(c11-1)/7 (set to) = 0
+           ------->     =(2/6 + 2 + 2 + 2/7)c11 -2 -2/7=0
+           ------->     =c11(14 +84 + 84 + 12)/42 = 16/7
+                        c11=42*16/(7*194)=672/1538  divide top and bottom by 14 ---> c11=48/97
+ 
+                    
+
+because
+E(cij*Ybarij.) = cij(mu + alphai + betaj)

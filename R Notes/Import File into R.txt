@@ -1,0 +1,8 @@
+> file = read.table('C:/Users/dcraig/Documents/ST518/Module 5 - Designs with Blocking Factors/Homework 5/basalarea.txt', header = TRUE,stringsAsFactors = FALSE)
+
+> file[,1]
+ [1] 0 0 0 2 2 2 4 4 4 6 6 6
+> xobs = c(file[,1])
+> print(xobs)
+ [1] 0 0 0 2 2 2 4 4 4 6 6 6
+

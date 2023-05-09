@@ -1,0 +1,41 @@
+/*HW7
+prob 1c*/
+options nocenter ls=90 ps=1000;
+
+data one;
+   input age   $ gender  $   y;
+datalines;
+jr       w       162
+jr       m       271
+jr       m       192
+jr       m       189
+jr       m       209
+jr       m       227
+jr       m       236
+sr       w       262
+sr       w       193
+sr       w       224
+sr       w       201
+sr       w       161
+sr       w       178
+sr       w       265
+sr       m       267
+sr       m       289
+;
+run;
+proc glm;
+class age gender;   *Young/older  men women;
+model y=age gender/clparm solution;   *--- df=N-1-2=16-3=13;
+estimate "youthful men" intercept 1 age 1 0 gender 1 0;  * mu + alpha1+ beta1;
+estimate "youthful women" intercept 1 age 1 0 gender 0 1;  * mu + alpha1+ beta1;
+lsmeans age*gender;  *won't work;
+means age*gender;  *won't work;
+run;
+endsas;
+
+prob 1b asks you to report ybar1.. ybar2.. ybar.1. ybar.2. 
+
+lsmean for young men = c11 ybar11. + c12 ybar12 + c21 ybar21 + c22 ybar22
+(see lecture 17)
+
+Var(2betahat1 + 3) = 2^2 Var(betahat1) 

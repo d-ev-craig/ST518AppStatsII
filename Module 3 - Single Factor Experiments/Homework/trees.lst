@@ -1,0 +1,34 @@
+The SAS System                                                                                            12:14 Monday, February 8, 2021   1
+
+The REG Procedure
+Model: MODEL1
+Dependent Variable: volume 
+
+Number of Observations Read          31
+Number of Observations Used          31
+
+
+                             Analysis of Variance
+ 
+                                    Sum of           Mean
+Source                   DF        Squares         Square    F Value    Pr > F
+
+Model                     2     7684.16251     3842.08126     254.97    <.0001
+Error                    28      421.92136       15.06862                     
+Corrected Total          30     8106.08387                                    
+
+
+Root MSE              3.88183    R-Square     0.9480
+Dependent Mean       30.17097    Adj R-Sq     0.9442
+Coeff Var            12.86612                       
+
+
+                                                       Parameter Estimates
+ 
+                                                                                                          Squared         Squared
+                     Parameter       Standard                                                             Partial         Partial
+Variable     DF       Estimate          Error    t Value    Pr > |t|      Type I SS     Type II SS    Corr Type I    Corr Type II
+
+Intercept     1      -57.98766        8.63823      -6.71      <.0001          28219      679.04025              .               .
+girth         1        4.70816        0.26426      17.82      <.0001     7581.78133     4782.97364        0.93532         0.91894
+height        1        0.33925        0.13015       2.61      0.0145      102.38118      102.38118        0.19527         0.19527

@@ -1,0 +1,17 @@
+age gender y
+jr w 162
+jr m 271
+jr m 192
+jr m 189
+jr m 209
+jr m 227
+jr m 236
+sr w 262
+sr w 193
+sr w 224
+sr w 201
+sr w 161
+sr w 178
+sr w 265
+sr m 267
+sr m 289
