@@ -1,7 +1,0 @@
-Go for Machine Learning degrees
-
-Carnegie Mellon
-Cornell
-MIT
-Penn State
-Georgia
